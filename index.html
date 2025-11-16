@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍 | 科技感展示</title>
+    <meta name="description" content="交互式个人介绍网站，展示个人信息、技能和项目">
+    <meta name="author" content="kute">
+    <!-- 引入外部资源 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入本地资源 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="grid-bg"></div>
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Kute</span>
+                <div class="logo-glow"></div>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate__animated animate__fadeInUp neon-text"><span class="text-glow">Hello,</span><br>我是 <span class="gradient-text highlight">kute</span></h1>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s typing-animation">热爱技术的创新者 & 全栈开发者</p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="https://github.com/kute0213/" class="btn btn-primary neon-btn">热爱技术的创新者</a>
+                        <a href="#projects" class="btn btn-secondary">查看我的项目</a>
+                    </div>
+                </div>
+                <div class="hero-animation parallax" data-speed="0.2">
+                    <div class="orbit-container">
+                        <div class="orbit"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+                        <div class="center-element">
+                            <div class="avatar">
+                                <div class="avatar-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particles"></div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">01</span> <span class="gradient-text">关于我</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content parallax" data-speed="0.1">
+                <div class="about-text">
+                    <p class="about-description">你好！我是<span class="highlight">kute</span>，一名充满激情的开发者和技术爱好者。我热衷于探索新技术，解决复杂问题，并创建令人惊叹的数字体验。</p>
+                    <p class="about-description">我拥有扎实的计算机科学基础和丰富的项目经验，擅长将创意转化为现实。我的目标是不断学习和成长，同时为世界带来有价值的技术解决方案。</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-user"></i> 姓名：</span>
+                            <span class="info-value">XinHanke (kute)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-envelope"></i> 邮箱：</span>
+                            <span class="info-value">3846415473@qq.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> 所在地：</span>
+                            <span class="info-value">中国</span>
+                        </div>
+                    </div>
+                    <div class="about-social">
+                        <a href="https://github.com/kute0213/" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item glow-hover">
+                        <h3 class="stat-number count-up" data-target="1" data-duration="2000">0</h3>
+                        <p class="stat-title">年开发经验</p>
+                    </div>
+                    <div class="stat-item glow-hover">
+                        <h3 class="stat-number count-up" data-target="7" data-duration="2000">0</h3>
+                        <p class="stat-title">完成项目</p>
+                    </div>
+                    <div class="stat-item glow-hover">
+                        <h3 class="stat-number count-up" data-target="3" data-duration="2000">0</h3>
+                        <p class="stat-title">专业技能</p>
+                    </div>
+                    <div class="stat-item glow-hover">
+                        <h3 class="stat-number count-up" data-target="100" data-duration="2000">0</h3>
+                        <p class="stat-title">技术学习小时</p>
+                    </div>
+                </div>
+                <div class="about-skills-preview">
+                    <div class="skill-card glow-hover">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="skill-title">全栈开发</h3>
+                        <p class="skill-description">精通前后端技术栈，能够独立完成完整项目开发</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能部分 -->
+    <section id="skills" class="skills fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">02</span> <span class="gradient-text">我的技能</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">前端开发</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <span class="skill-percentage">10%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">9%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 9%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">React / Vue</span>
+                                <span class="skill-percentage">8%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 8%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">后端开发</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Django / Flask</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">其他技能</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">数据库</span>
+                                <span class="skill-percentage">8%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 8%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">DevOps</span>
+                                <span class="skill-percentage">5%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- 项目部分 -->
+    <section id="projects" class="projects fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">03</span> <span class="gradient-text">我的项目</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+            </div>
+            <div class="projects-grid">
+                <!-- 项目卡片 -->
+                <div class="project-card glow-hover" data-category="web">
+                    <div class="project-image" style="background-image: url('images/云盘.png'); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/kute0213/Cloud-Disk" class="action-btn view-project" title="查看项目"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/kute0213/Cloud-Disk" class="action-btn view-code" title="查看代码"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">网盘</h3>
+                        <p class="project-category">网页应用</p>
+                        <p class="project-description">基于Django和MySQL开发的网盘系统，支持文件上传、下载、分享和权限管理。</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目卡片 -->
+                <div class="project-card glow-hover" data-category="web">
+                    <div class="project-image" style="background-image: url('images/py_to_exe.png'); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/kute0213/py_to_exe" class="action-btn view-project" title="查看项目"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/kute0213/py_to_exe" class="action-btn view-code" title="查看代码"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">python打包EXE</h3>
+                        <p class="project-category">桌面应用</p>
+                        <p class="project-description">基于Python和PyInstaller开发的工具，用于将Python脚本打包成独立的可执行文件，无需安装Python环境。</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyInstaller</span>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">04</span> <span class="gradient-text">联系我</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">让我们联系</h3>
+                    <p class="contact-description">如果您对我的作品感兴趣，或者想讨论合作机会，请随时联系我。我期待与您交流！</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">邮箱</span>
+                                <a href="mailto:3846415473@qq.com" class="contact-value">3846415473@qq.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">地址</span>
+                                <span class="contact-value">中国</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-code"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">GitHub</span>
+                                <a href="#" class="contact-value">github.com/kute</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Kute</span>
+                    <p class="logo-slogan">用代码编织梦想，在数字世界中创造无限可能。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero" class="footer-link">首页</a>
+                    <a href="#about" class="footer-link">关于我</a>
+                    <a href="#skills" class="footer-link">技能</a>
+                    <a href="#projects" class="footer-link">项目</a>
+                    <a href="#contact" class="footer-link">联系我</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 <span class="highlight">kute</span>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 性能优化脚本 - 放在最前面 -->
+    <script src="js/performance.js" defer></script>
+    <!-- 核心功能脚本 -->
+    <script src="js/main.js"></script>
+    <!-- 交互和动画脚本 -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/interactive.js"></script>
+    <!-- Chart.js 将通过动态导入加载 -->
+</body>
+</html>

@@ -1,0 +1,451 @@
+/* 响应式样式 */
+
+/* 大屏幕设备 - 1400px及以上 */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    .orbit-container {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .avatar {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* 大屏幕(笔记本电脑/台式机) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content {
+        gap: 40px;
+    }
+    
+    .orbit-container {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .avatar {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* 中等屏幕(平板) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    /* 导航栏 */
+    .nav-links {
+        position: fixed;
+        top: var(--navbar-height);
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - var(--navbar-height));
+        background-color: var(--darker-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+        transition: right var(--transition-speed) ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+    }
+    
+    .menu-toggle {
+        display: block;
+        z-index: 1000;
+    }
+    
+    /* 英雄区域 */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        order: 2;
+    }
+    
+    .hero-animation {
+        order: 1;
+        margin-bottom: 40px;
+    }
+    
+    .orbit-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* 关于部分 */
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .about-skills-preview {
+        width: 100%;
+    }
+    
+    /* 联系部分 */
+    .contact-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+/* 小屏幕(手机) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 650px;
+        padding: 0 15px;
+    }
+    
+    :root {
+        --navbar-height: 70px;
+        --section-padding: 60px 0;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    /* 导航栏 */
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    
+    /* 英雄区域 */
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 200px;
+        text-align: center;
+    }
+    
+    /* 部分标题 */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* 技能部分 */
+    .skills-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .skills-category {
+        min-width: 100%;
+    }
+    
+    /* 项目部分 */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+    
+    /* 页脚 */
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    /* 回到顶部按钮 */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* 超小屏幕(小手机) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    :root {
+        --navbar-height: 65px;
+        --section-padding: 50px 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    /* 导航栏 */
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .nav-links {
+        width: 250px;
+    }
+    
+    /* 英雄区域 */
+    .orbit-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    /* 关于部分 */
+    .personal-info {
+        margin-left: 0;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .info-label {
+        width: auto;
+    }
+    
+    /* 部分标题 */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-number {
+        font-size: 1.2rem;
+    }
+    
+    /* 项目部分 */
+    .project-image {
+        height: 200px;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    /* 联系部分 */
+    .contact-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-icon {
+        align-self: flex-start;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+    }
+}
+
+/* 自定义断点：360px */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-buttons {
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .skill-card {
+        padding: 20px;
+    }
+}
+
+/* 移动设备横屏模式优化 */
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    .hero {
+        padding: calc(var(--section-padding) * 0.6) 0;
+    }
+    
+    .orbit-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .skills-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .skill-card {
+        width: calc(50% - 15px);
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+    /* 触摸设备上的交互调整 */
+    .btn,
+    .nav-link,
+    .skill-card,
+    .project-card {
+        -webkit-tap-highlight-color: transparent;
+        transition: none !important;
+    }
+    
+    /* 触摸设备上移除悬停效果 */
+    .btn:hover,
+    .nav-link:hover,
+    .skill-card:hover,
+    .project-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* 简化动画以提高性能 */
+    .typing-cursor {
+        animation: none;
+        opacity: 1;
+    }
+    
+    /* 触摸友好的按钮尺寸 */
+    .btn {
+        min-height: 48px;
+        min-width: 48px;
+        padding: 12px 24px;
+    }
+}
+
+/* 性能优化 - 低性能设备检测 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    /* 禁用非必要的动画效果 */
+    .orbit,
+    .particle,
+    .grid-item {
+        animation: none !important;
+        transform: none !important;
+    }
+    
+    /* 简化视觉效果 */
+    .neon-text,
+    .neon-border {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+    :root {
+        --text-color: #ffffff;
+        --background-color: #000000;
+        --primary-color: #ff0000;
+        --secondary-color: #00ff00;
+        --border-color: #ffffff;
+    }
+    
+    .nav-links,
+    .skill-card,
+    .project-card {
+        background-color: #1a1a1a;
+        border: 2px solid #ffffff;
+    }
+}
